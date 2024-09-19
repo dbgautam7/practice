@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{bodyData}}</h1>
+        {%for item in languages%}
+        {% if item == "Python"  %}
+        <p>{{forloop.counter}}. {{item}} is a top 1 programming language.</p>
+        {% elif item == "C#" %}
+        <p>{{forloop.counter}}. {{item}} is very tough to understand.</p>
+        {% else %}
+        <p>{{forloop.counter}}. {{item}}</p>
+        {% endif %}
+        {% endfor %}
+    </body>
+    </html>
